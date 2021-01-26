@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+using Microsoft.Web.WebView2.Core;
 using System;
 
 namespace WebView2WindowsFormsBrowser
@@ -129,7 +130,7 @@ namespace WebView2WindowsFormsBrowser
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(738, 31);
             this.txtUrl.TabIndex = 4;
-            this.txtUrl.Text = "https://www.bing.com/";
+            this.txtUrl.Text = "WebView2 Bug";
             // 
             // menuStrip1
             // 
@@ -211,7 +212,6 @@ namespace WebView2WindowsFormsBrowser
             this.webView2Control.Location = new System.Drawing.Point(0, 96);
             this.webView2Control.Name = "webView2Control";
             this.webView2Control.Size = new System.Drawing.Size(788, 410);
-            this.webView2Control.Source = new Uri("https://www.bing.com/");
             this.webView2Control.TabIndex = 7;
             this.webView2Control.CoreWebView2InitializationCompleted += WebView2Control_CoreWebView2InitializationCompleted; ;
             this.webView2Control.NavigationStarting += WebView2Control_NavigationStarting;
@@ -220,6 +220,7 @@ namespace WebView2WindowsFormsBrowser
             this.webView2Control.KeyDown += WebView2Control_KeyDown;
             this.webView2Control.KeyUp += WebView2Control_KeyUp;
             this.webView2Control.AcceleratorKeyPressed += WebView2Control_AcceleratorKeyPressed;
+
             // 
             // BrowserForm
             // 

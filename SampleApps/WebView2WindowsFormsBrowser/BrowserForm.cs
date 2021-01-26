@@ -3,8 +3,10 @@
 // found in the LICENSE file.
 
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.Core;
+using WebView2WindowsFormsBrowser.Hosts;
 
 namespace WebView2WindowsFormsBrowser
 {
@@ -14,6 +16,16 @@ namespace WebView2WindowsFormsBrowser
         {
             InitializeComponent();
             HandleResize();
+            InitializeWebView2();
+        }
+
+        private async Task InitializeWebView2()
+        {
+            var options = new CoreWebView2EnvironmentOptions(); 
+            options.AdditionalBrowserArguments = "--remote-debugging-port=8077";
+            var env = await CoreWebView2Environment.CreateAsync(null, null, options);
+
+            await this.webView2Control.EnsureCoreWebView2Async(env);
         }
 
         private void UpdateTitleWithEvent(string message)
@@ -51,6 +63,14 @@ namespace WebView2WindowsFormsBrowser
             this.webView2Control.CoreWebView2.HistoryChanged += CoreWebView2_HistoryChanged;
             this.webView2Control.CoreWebView2.DocumentTitleChanged += CoreWebView2_DocumentTitleChanged;
             this.webView2Control.CoreWebView2.AddWebResourceRequestedFilter("*", CoreWebView2WebResourceContext.Image);
+
+            // add a host object
+            this.webView2Control.CoreWebView2.AddHostObjectToScript("counter", new ConnectionHost());
+
+            //this.webView2Control.CoreWebView2.OpenDevToolsWindow();
+
+            this.webView2Control.CoreWebView2.Navigate("http://localhost/webview2test/Content/test.html");
+
             UpdateTitleWithEvent("CoreWebView2InitializationCompleted succeeded");
         }
 

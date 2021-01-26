@@ -13,6 +13,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WV2DeploymentWiXCustomActio
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WV2DeploymentWiXBurnBundleSample", "WV2DeploymentWiXBurnBundleSample\WV2DeploymentWiXBurnBundleSample.wixproj", "{352113BF-FB17-4FD4-A47B-7D1013BFB8AE}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebServer", "WebServer\WebServer.vbproj", "{B776BA8D-D71E-4474-BA94-FE0BF09837EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,38 @@ Global
 		{352113BF-FB17-4FD4-A47B-7D1013BFB8AE}.Win7 Release|x64.Build.0 = Release|x86
 		{352113BF-FB17-4FD4-A47B-7D1013BFB8AE}.Win7 Release|x86.ActiveCfg = Release|x86
 		{352113BF-FB17-4FD4-A47B-7D1013BFB8AE}.Win7 Release|x86.Build.0 = Release|x86
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|x64.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|ARM64.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|x64.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Release|x86.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|ARM64.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|x64.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|x64.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|x86.ActiveCfg = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Debug|x86.Build.0 = Debug|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|Any CPU.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|ARM64.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|ARM64.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|x64.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|x64.Build.0 = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|x86.ActiveCfg = Release|Any CPU
+		{B776BA8D-D71E-4474-BA94-FE0BF09837EE}.Win7 Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
