@@ -6,17 +6,23 @@
     <title></title>
     <script>
         var counter = 0;
+        var i = 0;
         function updateCount(count) {
             counter = count;
             console.log("count is " + count);
         };
         setInterval(function () {
+            i += 1;
             window.chrome.webview.hostObjects.counter.ping().then(updateCount);
-        }, 100);
+        }, i === 10 ? 100 : 0);
+
+        function updateHash() {
+            window.location.replace('http://localhost/webview2test/Content/test.html?auth=inherit#boom/boom');
+        }
     </script>
 </head>
 <body>
 <h1>WebView2 Issue</h1>
-<a href="https://www.bing.com">Bing</a>
+<button onclick="updateHash()">Navigate within page</button>
 </body>
 </html>
